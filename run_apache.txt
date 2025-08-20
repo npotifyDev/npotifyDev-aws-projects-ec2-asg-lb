@@ -1,0 +1,6 @@
+// This code should be run in EC2 instance to run apache on it.
+sudo yum update -y
+sudo yum install -y httpd
+echo "Hello from $(hostname)" > /var/www/html/index.html
+sudo systemctl enable httpd
+sudo systemctl start httpd
