@@ -1,0 +1,4 @@
+// This CMD will generate stress on EC2 instance so ASG will create another instance to balance that load(stress).
+
+sudo yum install -y stress
+stress --cpu 2 --timeout 300
